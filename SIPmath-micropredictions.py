@@ -630,7 +630,7 @@ user_terms=3
 graphs=False
 dependence = 'independent'
 file_name = f'{name}.SIPmath'
-micro_data_df.apply(make_csv_graph,
+micro_data_df[[name]].apply(make_csv_graph,
                 probs=probs,
                 boundedness=boundedness,
                 bounds=bounds,
