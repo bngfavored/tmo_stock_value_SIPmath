@@ -207,7 +207,7 @@ def plot(m, big_plots=None, csv=None, term=None, name=None, key=None):
                                 c='darkblue')
                     ax.patch.set_facecolor('white')
                     ax.axes.yaxis.set_ticks([])
-                    ax.set(title='TMoblie Stock Value', xlabel='Tens of BPS')
+                    ax.set(title='TMoblie Stock Value', xlabel='BPS')
                     newax = fig.add_axes([0.5,0.5,0.5,0.5], anchor=(0.59, 0.15), zorder=1)
                     newax.imshow(im)
                     newax.axis('off')
@@ -612,7 +612,7 @@ def make_csv_graph(series,
 col_name = 'Stock_Value'
 # micro_data = get_micropredictions()
 # micro_data_df = pd.DataFrame([ p for p in micro_data if p > 0.01 ], columns=[col_name])
-micro_data_df = inliers
+micro_data_df = inliers*10
 # micro_data_df = get_nyc_data()
 # print(micro_data_df.dtypes)
 print(micro_data_df.dtypes)
