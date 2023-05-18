@@ -207,7 +207,7 @@ def plot(m, big_plots=None, csv=None, term=None, name=None, key=None):
                                 c='darkblue')
                     ax.patch.set_facecolor('white')
                     ax.axes.yaxis.set_ticks([])
-                    ax.set(title='TMoblie Stock Value', xlabel='BPS')
+                    ax.set(title='TMoblie Stock Value', xlabel='Basis Points')
                     newax = fig.add_axes([0.5,0.5,0.5,0.5], anchor=(0.59, 0.15), zorder=1)
                     newax.imshow(im)
                     newax.axis('off')
